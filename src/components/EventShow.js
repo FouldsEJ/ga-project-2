@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { getSingleEvent } from '../lib/api';
 import Map, { Marker } from 'react-map-gl';
 import { useNavigate } from 'react-router-dom';

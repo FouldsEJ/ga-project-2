@@ -46,9 +46,23 @@ On page load, the 'formData' state is intially set to a blank canvas of data to 
 
 Once again, in a similar way to the home page worked, a form is displayed on screen, which onChange updates the relevent piece of state within 'formData', using 'e.target.name'. Likewise, onClick of the 'Search' button, the 'handleSubmit' function is called, which calls the getData function, which in turn using axios fetches the data from the Skiddle API using the queryparams from the 'formData' state.
 
-![useLocation Functionality](src/assets/readme-images/events-index-search-functionality.png)
+![Search Functionality](src/assets/readme-images/events-index-search-functionality.png)
 
 #### The Event Show Page
+
+The event show page is designed to show the in-depth details of each individual event once clicked on in the Events Index Page. The specific event was passed by using the 'useParams' hook in the react-router-dom library. Using this passed id, the event data was fetched from the API in a React.useEffect() using axios and displayed on the page. In addition to displaying the event details, react-map-gl was also used to display a map of the events location. This was a simple install and then incorporation of the Map component, which required the longitude and latitude of the event location, a secret key and some styling. The Map component also took a sub-component of a Marker, which again used the latitude and logitude to specify the markers lcoation.
+
+![Map component](src/assets/readme-images/map-component.png)
+
+#### The Login, Register and Navbar Components
+
+The login and register components were simple forms, which updated a piece of state onChange. In the register component, on submit of the form, the users data was stored in local storage. This was then accessed on submit of the users form in the login component and checked against the login form data to ensure the user was registered. (This was a very simple demonstration of local storage and more effective login and register methods can be seen in my later projects using tools such as jwt-tokens.)
+
+The Navbar component was a simple display which used the 'Link' hook from the react-router-dom library for each section to ensure the user was navigated to the correct page upon click. For example, if the user clicked the login text, they were navigated to the login page.
+
+#### Styling
+
+The majority of styling for this project was done using the CSS framewor Bulma. This framework was great to work with and my first project doing so. It was very simple to master and had some great in built features, such as the navbar and forms. A very small amount of styling was done using Sass, but the tightness of bulma restricted the additional CSS that could be applied to the project. Overall, Bulma was a great tool to create a good looking app quickly.
 
 ## Wins & Blockers
 
