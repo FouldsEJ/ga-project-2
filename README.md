@@ -90,6 +90,6 @@ As my first pair-programming project it was not only a great opportunity to lear
 
 ## Contact:
 
-Github: github.com/FouldsEJ
-Linkedin: linkedin.com/in/edwardfoulds
-Portfolio: edwardfoulds.co.uk
+- Github: github.com/FouldsEJ
+- Linkedin: linkedin.com/in/edwardfoulds
+- Portfolio: edwardfoulds.co.uk
